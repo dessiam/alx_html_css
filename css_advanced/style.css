@@ -1,0 +1,56 @@
+@font-face {
+    font-family: SourceSansPro;
+    src: url(./fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: spincycle;
+    src: url(./fonts/spincycle_ot.otf);
+}
+
+body {
+    font-family: SourceSansPro, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;            /* vertical alignment */
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;     /* makes the list horizontal */
+  gap: 30px;         /* space between the links */
+  list-style: none;  /* removes dots */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+
+h1 {
+    font-family: SourceSansPro, sans-serif;
+    font-size: 120px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
