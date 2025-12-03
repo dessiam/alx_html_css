@@ -7,6 +7,7 @@
     src: url(./fonts/spincycle_ot.otf);
 }
 
+
 body {
     font-family: SourceSansPro, sans-serif;
     margin: 0;
@@ -17,16 +18,16 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between; /* logo left, links right */
-  align-items: center;            /* vertical alignment */
+  justify-content: space-between; 
+  align-items: center;            
   padding: 20px;
 }
 
 nav ul {
-  display: flex;     /* makes the list horizontal */
-  gap: 30px;         /* space between the links */
-  list-style: none;  /* removes dots */
-  margin: 0;
+  display: flex;     
+  gap: 30px;        
+  list-style: none;  
+  margin-top: 10px;
   padding: 0;
 }
 
@@ -42,11 +43,281 @@ h1 {
     color: #000000;
 }
 
+.banner {
+  background: 
+  radial-gradient(circle at center, rgba(7,22,41,0.6), rgba(41,48,61,0.9)),
+  url("images/BitmapBackg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  color: white;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("images/BitmapBackg.png");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+span {
+    margin-right: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.cards img {
+  width: 120px;          
+  height: 120px;        
+  object-fit: cover;     
+  border-radius: 50%;
+  display: block;        
+  margin: 0 auto 10px;   
+}
+
+button {
+    display: block;
+    margin:20px auto;
+    background-color: #C271FF;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 25px;
+    
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   background-color: #C271FF;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+      padding-right: 50px;
+}
+
+.container img {
+      border-radius: 50%;
+}
 
 
+tutorials h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
 
+/* Container for the card row */
+.tutorial-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 40px;
+  flex-wrap: wrap; /* responsive */
+}
 
+/* Individual card */
+.tutorial-card {
+  width: 260px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
 
+}
+
+/* Thumbnail image */
+.tutorial-thumbnail {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Description */
+.tutorial-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 15px;
+}
+
+/* Author row */
+.tutorial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tutorial-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Rating stars */
+.tutorial-rating {
+  color: #C271FF;
+  margin: 10px 0;
+  display: flex;
+  gap: 4px;
+}
+
+h4 {
+    color: #C271FF;
+}
+
+/* Time */
+.tutorial-time {
+  font-weight: bold;
+  color: #C271FF;
+}
+
+.membership {
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #071629;
+}
+
+/* Title */
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* Flex container for cards */
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 50px;
+  flex-wrap: wrap; /* responsive */
+}
+
+/* Each card */
+.membership-card {
+  width: 220px;
+}
+
+/* Icon */
+.membership-card img {
+  width: 60px; /* match Figma */
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+/* Card title */
+.membership-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+/* Description text */
+.membership-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #C271FF;   /* Figma's purple */
+  font-weight: bold;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 80px 40px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+/* 2-column grid layout */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* each FAQ item */
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #071629; 
+  padding: 60px 20px;
+  color: white;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Resize the logo to match Figma */
+.footer-top img {
+  width: 150px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  color: #ff6565;
+}
+
+.footer p {
+  font-size: 14px;
+  opacity: 0.7;
+}
 
 
 
