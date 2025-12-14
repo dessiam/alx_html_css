@@ -94,6 +94,69 @@ a:active {
     padding: 100px;
 }
 
+.what_we_do {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 100px 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+    margin-right: 70px;
+}
+
+.our_results {
+    padding: 100px 20px;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(41, 48, 61, 0.5), rgba(7, 22, 41, 0.5)), url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.pentagons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.pentagon {
+    position: relative; /* IMPORTANT */
+    width: 190px;       /* adjust to match Figma */
+    height: 190px;
+    font-family: source sans pro, sans-serif;
+    font-weight: 700;
+}
+
+.pentagon img {
+    width: 100%;
+    height: auto;
+}
+
+.percent {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.label {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+
 @media screen and (max-width: 480px) {
    nav {
     flex-direction: column;
@@ -105,11 +168,4 @@ a:active {
     flex-direction: column;
     gap: 15px;
   }
-
-  banner_section,
-  .our_results,
-  .what_we_do {
-    padding: 60px 20px;
-  }
-  
 }
