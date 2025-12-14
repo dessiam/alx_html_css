@@ -70,7 +70,24 @@ button {
     color: white;
     font-family: source sans pro, sans-serif;
     font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
 
+}
+
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #FF6565;
 }
 
 .banner_section {
